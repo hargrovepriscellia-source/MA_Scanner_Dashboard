@@ -7,7 +7,7 @@ export default async function handler(req, res) {
 
   const OANDA_API_KEY = process.env.OANDA_API_KEY;
 
-  const OANDA_URL = "https://api-fxlive.oanda.com/v20";
+  const OANDA_URL = "https://api-fxpractice.oanda.com/v20";
 
   try {
     const url = `${OANDA_URL}/instruments/${pair}/candles?count=200&granularity=${tf.toUpperCase()}`;
